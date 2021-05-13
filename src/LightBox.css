@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+button {
+    background: #F3F3F3;
+    border: 1px solid lightgrey;
+    height: 40px;
+    margin: 2px;
+    outline: none;
+    width: 40px;
+}
+
+.inactive {
+    background: #F3F3F3;
+    border: 1px solid lightgrey;
+}
+
+.active {
+    background: #0ac6ff;
+    border: 1px solid rgb(0, 174, 255);
+}
+
