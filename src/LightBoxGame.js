@@ -184,7 +184,7 @@ class LightBoxGame extends React.Component {
                 <button className="stopButton" onClick={() => this.stopGame()}>Stop</button>
                 <button className="stopButton" onClick={() => this.restartGame()}>Restart</button>
                 <div>
-                    <p>Make it past 28 points and you'll be rewarded.</p>
+                    <p>Make it past 28 seconds and you'll be rewarded.</p>
                     { this.state.time/1000 >= 28 && 
                         <p>
                             KD, your clue: 4 Woodlands Road
