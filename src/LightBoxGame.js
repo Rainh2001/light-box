@@ -19,7 +19,8 @@ class LightBoxGame extends React.Component {
             playing: true,
             // currentStage: 0,
             health: 10,
-            time: 0
+            time: 0,
+            victory: false
         }
     }
 
@@ -168,6 +169,7 @@ class LightBoxGame extends React.Component {
     }
 
     render() {
+        console.log(this.state.time);
         return (
             <div className="light-box-game">
                 <p>Time: {this.state.time/1000}</p>
@@ -181,6 +183,14 @@ class LightBoxGame extends React.Component {
                 />
                 <button className="stopButton" onClick={() => this.stopGame()}>Stop</button>
                 <button className="stopButton" onClick={() => this.restartGame()}>Restart</button>
+                <div>
+                    <p>Make it past 28 points and you'll be rewarded.</p>
+                    { this.state.time/1000 >= 28 && 
+                        <p>
+                            KD, your clue: 4 Woodlands Road
+                        </p>
+                    }
+                </div>
             </div>
         )
     }
